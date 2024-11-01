@@ -1,0 +1,67 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  background: #1B1326;
+
+  .CardActions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .CardActionButtons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+
+    transition: opacity 0.3s;
+  }
+
+  .CardActionButton {
+    background: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .Badge {
+    border-radius: 4px;
+    padding: 0 6px;
+    background: rgba(255, 255, 255, 0.07);
+    text-transform: uppercase;
+    border: none;
+    display: inline-block;
+    color: #B6B6B6;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 183%;
+    cursor: pointer;
+  }
+
+  .CardTitle {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &:hover {
+    .CardActionButtons {
+      opacity: 1;
+    }
+  }
+}

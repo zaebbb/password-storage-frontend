@@ -1,0 +1,65 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 92px;
+
+  .Logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .AddPasswordButton {
+    background: transparent;
+    border: none;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+
+    img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .Search {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 10px;
+    background: #160c24;
+    color: #B6B6B6;
+
+    &::placeholder {
+      color: #B6B6B6;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      padding: 15px 72px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 15px 52px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      padding: 10px 32px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    & {
+      padding: 5px 12px;
+    }
+  }
+}
